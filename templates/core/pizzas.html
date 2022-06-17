@@ -1,0 +1,11 @@
+
+{% extends 'core/index.html' %}
+{% block principal %}
+    <ol>
+        {% if ingredientes %}
+            {% for i in object_list %}
+                <li>{{ i.name }}</li>
+            {% endfor %}
+        {% endif %}
+    </ol>
+{% endblock %}
